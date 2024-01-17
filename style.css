@@ -3,8 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #333;
-    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav {
@@ -12,51 +11,62 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #555;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-container {
+    width: 50px; /* Adjust as needed */
 }
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #333; /* Dark grey */
     margin: 0 10px;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #ddd;
+    color: #555; /* Light grey */
 }
 
 .body-section {
-    padding: 20px;
+    padding: 80px 20px 20px;
 }
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #555;
+    background-color: #eee; /* Light grey */
     height: 50px;
 }
 
-h1, h2, p {
-    color: #fff;
+.dark-mode {
+    background-color: #333;
+    color: #fff; /* White */
 }
 
-.skills-section ul {
-    list-style-type: none;
-    padding: 0;
+.dark-mode nav a {
+    color: #ddd; /* Light grey */
 }
 
-.skills-section li {
-    margin: 5px 0;
+.dark-mode footer {
+    background-color: #555;
 }
 
-#theme-toggle {
+.theme-toggle {
     cursor: pointer;
 }
 
-#about-container, #skills-container, #career-container, #projects-container, #contact-container {
-    background-color: #444;
+#about-container,
+#skills-container,
+#career-container,
+#projects-container,
+#contact-container {
+    background-color: #eee;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -69,7 +79,7 @@ h1, h2, p {
 }
 
 .project {
-    background-color: #666;
+    background-color: #ddd; /* Light grey */
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 15px;
@@ -77,5 +87,5 @@ h1, h2, p {
 }
 
 .project:hover {
-    background-color: #888;
+    background-color: #ccc; /* Slightly darker grey on hover */
 }
