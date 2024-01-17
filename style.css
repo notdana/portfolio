@@ -1,9 +1,9 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 100px;
+/* Existing CSS styles */
+
+.details {
+    display: none;
 }
 
-h1 {
-    color: #333;
+.visible {
+    display: block;
 }
