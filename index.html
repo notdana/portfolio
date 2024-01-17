@@ -9,9 +9,11 @@
 <body>
     <div id="app">
         <nav>
-            <a href="#about">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="logo"></svg>
-            </a>
+            <div class="logo-container">
+                <a href="#about">
+                    <img src="https://raw.githubusercontent.com/notdana/portfolio/main/materials/logo.png" alt="Logo">
+                </a>
+            </div>
             <div id="nav-spacer"></div>
             <div class="nav-link">
                 <a href="#skills">Skills</a>
@@ -25,64 +27,20 @@
             <div class="nav-link">
                 <a href="#contact">Get In Touch</a>
             </div>
-            <div id="theme-toggle">
+            <div class="theme-toggle" onclick="toggleTheme()">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 30px;"></svg>
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="dark" style="width: 0px;"></svg>
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" class="dark" style="width: 0px;"></svg>
             </div>
         </nav>
 
-        <div id="about" class="body-section">
-            <div id="about-container">
-                <h1>About Me</h1>
-                <p>This is where you can introduce yourself and provide some information about your background and interests.</p>
-            </div>
-        </div>
+        <!-- ... rest of the sections ... -->
 
-        <div id="skills" class="body-section">
-            <div class="skills-section">
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <!-- Add more skills as needed -->
-                </ul>
-            </div>
-        </div>
-
-        <div id="career" class="body-section">
-            <div id="career-container">
-                <h2>My Career Path</h2>
-                <!-- Add your education and job history using templates -->
-                <template id="education-template">
-                    <!-- Your education details go here -->
-                </template>
-                <template id="job-template-2">
-                    <!-- Your job details go here -->
-                </template>
-            </div>
-        </div>
-
-        <div id="projects" class="body-section">
-            <h2>Selected Work</h2>
-            <div id="proj-container">
-                <!-- Your project details go here using templates -->
-                <template id="project-template">
-                    <!-- Your project details go here -->
-                </template>
-            </div>
-        </div>
-
-        <div id="contact" class="body-section">
-            <div id="contact-container">
-                <h2>Contact Me</h2>
-                <p>Feel free to reach out to me at your.email@example.com</p>
-            </div>
-        </div>
     </div>
 
     <footer>
-        <p>Dana Alsani 2024</p>
+        <p>Aamir Husain 2023</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
